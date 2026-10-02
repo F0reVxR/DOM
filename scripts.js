@@ -45,5 +45,8 @@ paragraph.addEventListener('click', (e) => {
 const ema = document.querySelector('.amail')
 
 ema.addEventListener('click', (e) => {
-    let len = 
+    let multiplier = prompt('Input multiplier')
+    for (let i = 0; i < multiplier; ++i){
+        ema.innerText += ema.innerText
+    }
 });
