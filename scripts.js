@@ -8,8 +8,16 @@ let upperText = text.toUpperCase();
 
 const button = document.querySelector('.firstButton');
 
-function caps(){
-    secondHeading.innerText = secondHeading.innerText.toLocaleUpperCase();
-}
+let status = false;
 
-button.addEventListener('click', caps);
+button.addEventListener('click', (e) => {
+    if (status === false){
+        secondHeading.innerText = secondHeading.innerText.toLocaleUpperCase();
+        status = true;
+    }
+    else{
+        secondHeading.innerText = secondHeading.innerText.toLocaleLowerCase();
+        status = false;
+    }
+});
+
