@@ -40,5 +40,10 @@ const paragraph = document.querySelector('p')
 
 paragraph.addEventListener('click', (e) => {
     paragraph.innerText = paragraph.innerText.replaceAll(' ', '')
+});
 
+const ema = document.querySelector('.amail')
+
+ema.addEventListener('click', (e) => {
+    let len = 
 });
