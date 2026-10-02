@@ -42,7 +42,30 @@ paragraph.addEventListener('click', (e) => {
     paragraph.innerText = paragraph.innerText.replaceAll(' ', '')
 });
 
+///////////////////////////////////
 const ema = document.querySelector('.amail')
+
+const x2 = document.querySelector('.x2Button')
+const x3 = document.querySelector('.x3Button')
+const x4 = document.querySelector('.x4Button')
+
+x2.addEventListener('click', (e) => {
+    for (let i = 0; i < 2; ++i){
+        ema.innerText += ema.innerText
+    }
+});
+
+x3.addEventListener('click', (e) => {
+    for (let i = 0; i < 3; ++i){
+        ema.innerText += ema.innerText
+    }
+});
+
+x4.addEventListener('click', (e) => {
+    for (let i = 0; i < 4; ++i){
+        ema.innerText += ema.innerText
+    }
+});
 
 ema.addEventListener('click', (e) => {
     let multiplier = prompt('Input multiplier')
