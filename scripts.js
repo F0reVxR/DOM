@@ -35,3 +35,10 @@ runButton.addEventListener('mouseover', (e) => {
     runButton.style.top = randomTop + 'px';
     runButton.style.left = randomLeft + 'px';
 });
+
+const paragraph = document.querySelector('p')
+
+paragraph.addEventListener('click', (e) => {
+    paragraph.innerText = paragraph.innerText.replaceAll(' ', '')
+
+});
