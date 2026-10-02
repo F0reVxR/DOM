@@ -21,3 +21,17 @@ button.addEventListener('click', (e) => {
     }
 });
 
+const runButton = document.querySelector('.runButton');
+
+runButton.addEventListener('mouseover', (e) => {
+    runButton.style.background = 'red';
+    
+    const maxTop = window.innerHeight - runButton.offsetHeight;
+    const maxLeft = window.innerWidth - runButton.offsetWidth;
+
+    const randomTop = Math.floor(Math.random() * maxTop);
+    const randomLeft = Math.floor(Math.random() * maxLeft);
+
+    runButton.style.top = randomTop + 'px';
+    runButton.style.left = randomLeft + 'px';
+});
